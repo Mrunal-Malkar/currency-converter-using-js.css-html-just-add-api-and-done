@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency-Converter</title>
+    <link rel="stylesheet" href="cc.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+
+    <div id="container">
+        
+        <h1 id="heading">Currency-Converter</h1>
+        
+        <form id="form">
+            
+            <div class="amount" id="for">
+                <p class="para" id="foramountpara">
+                    Enter amount to convert:
+                </p>
+                <input type="text" id="foramountinput">
+            </div>
+
+            <!-- start of first select -->
+            <div id="selectoutermost">
+            <div id="selectouter" class="select">
+            
+                <p class="para">From:</p>
+
+                <div class="flagimage">
+                    <img src="https://flagsapi.com/BE/flat/64.png" alt="img" id="imgfrom">
+                </div>
+
+            <select class="selectdropdown" id="selectfrom" name="From">
+                <option value="USD">USD</option>
+                <option value="INR">INR</option>
+                <option value="EUR">EUR</option>
+                <option value="AUD">AUD</option>
+                <option value="JPY">JPY</option>
+                <option value="NZD">NZD</option>
+            </select>
+            
+            </div>
+            <!-- end of first select -->
+
+            <div id="exchangeicondiv">
+                <i class="fa-solid fa-arrow-right-arrow-left" id="exchangeicon" alt="exchange-icon"></i>
+            </div>
+            
+            <!-- start of second select -->
+            <div id="selectoutertwo" class="select">
+            
+            <p class="para">To:</p>
+            <div class="flageimage">
+                <img src="https://flagsapi.com/IN/flat/64.png" alt="img" id="imgto">
+            </div>
+            <select class="selectdropdown" id="selectto" name="To">
+                <option value="USD">USD</option>
+                <option value="INR">INR</option>
+                <option value="EUR">EUR</option>
+                <option value="AUD">AUD</option>
+                <option value="JPY">JPY</option>
+                <option value="NZD">NZD</option>
+            </select>
+            </div>
+            </div>
+            <!-- end of second div -->
+
+            <div id="currency_value">1 USD = 82 INR</div>
+            
+            <div id="submitbtndiv">
+                <button id="submitbtn"><p class="para">Convert currency</p></button>
+            </div>
+        
+        </form>
+    </div>
+
+
+    <script src="cc2.js"></script>
+    <script src="cc.js"></script>
+</body>
+</html>
